@@ -29,45 +29,48 @@
         private void InitializeComponent()
         {
             this.BtnAtras = new System.Windows.Forms.Button();
-            this.TxtName = new System.Windows.Forms.TextBox();
+            this.TxtNumA = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.button1 = new System.Windows.Forms.Button();
             this.Data = new System.Windows.Forms.DataGridView();
-            this.BtnMostrar = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.Data)).BeginInit();
             this.SuspendLayout();
             // 
             // BtnAtras
             // 
-            this.BtnAtras.Location = new System.Drawing.Point(59, 377);
+            this.BtnAtras.Location = new System.Drawing.Point(11, 319);
+            this.BtnAtras.Margin = new System.Windows.Forms.Padding(2);
             this.BtnAtras.Name = "BtnAtras";
-            this.BtnAtras.Size = new System.Drawing.Size(148, 23);
+            this.BtnAtras.Size = new System.Drawing.Size(111, 19);
             this.BtnAtras.TabIndex = 0;
             this.BtnAtras.Text = "Atras";
             this.BtnAtras.UseVisualStyleBackColor = true;
             this.BtnAtras.Click += new System.EventHandler(this.BtnAtras_Click);
             // 
-            // TxtName
+            // TxtNumA
             // 
-            this.TxtName.Location = new System.Drawing.Point(203, 58);
-            this.TxtName.Name = "TxtName";
-            this.TxtName.Size = new System.Drawing.Size(155, 22);
-            this.TxtName.TabIndex = 1;
+            this.TxtNumA.Location = new System.Drawing.Point(187, 38);
+            this.TxtNumA.Margin = new System.Windows.Forms.Padding(2);
+            this.TxtNumA.Name = "TxtNumA";
+            this.TxtNumA.Size = new System.Drawing.Size(117, 20);
+            this.TxtNumA.TabIndex = 1;
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(80, 63);
+            this.label1.Location = new System.Drawing.Point(11, 41);
+            this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(117, 17);
+            this.label1.Size = new System.Drawing.Size(155, 13);
             this.label1.TabIndex = 2;
-            this.label1.Text = "Agregar alumno: ";
+            this.label1.Text = "Ingrese la cantidad de alumno: ";
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(389, 49);
+            this.button1.Location = new System.Drawing.Point(342, 31);
+            this.button1.Margin = new System.Windows.Forms.Padding(2);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(101, 41);
+            this.button1.Size = new System.Drawing.Size(76, 33);
             this.button1.TabIndex = 3;
             this.button1.Text = "Ingresar";
             this.button1.UseVisualStyleBackColor = true;
@@ -76,33 +79,24 @@
             // Data
             // 
             this.Data.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.Data.Location = new System.Drawing.Point(249, 162);
+            this.Data.Location = new System.Drawing.Point(36, 79);
+            this.Data.Margin = new System.Windows.Forms.Padding(2);
             this.Data.Name = "Data";
             this.Data.RowTemplate.Height = 24;
-            this.Data.Size = new System.Drawing.Size(240, 260);
+            this.Data.Size = new System.Drawing.Size(268, 211);
             this.Data.TabIndex = 4;
-            // 
-            // BtnMostrar
-            // 
-            this.BtnMostrar.Location = new System.Drawing.Point(96, 182);
-            this.BtnMostrar.Name = "BtnMostrar";
-            this.BtnMostrar.Size = new System.Drawing.Size(101, 41);
-            this.BtnMostrar.TabIndex = 5;
-            this.BtnMostrar.Text = "Mostrar";
-            this.BtnMostrar.UseVisualStyleBackColor = true;
-            this.BtnMostrar.Click += new System.EventHandler(this.BtnMostrar_Click);
             // 
             // Ejercicio3
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(543, 450);
-            this.Controls.Add(this.BtnMostrar);
+            this.ClientSize = new System.Drawing.Size(439, 366);
             this.Controls.Add(this.Data);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.TxtName);
+            this.Controls.Add(this.TxtNumA);
             this.Controls.Add(this.BtnAtras);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "Ejercicio3";
             this.Text = "Ejercicio3";
             ((System.ComponentModel.ISupportInitialize)(this.Data)).EndInit();
@@ -114,10 +108,9 @@
         #endregion
 
         private System.Windows.Forms.Button BtnAtras;
-        private System.Windows.Forms.TextBox TxtName;
+        private System.Windows.Forms.TextBox TxtNumA;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.DataGridView Data;
-        private System.Windows.Forms.Button BtnMostrar;
     }
 }
