@@ -68,18 +68,14 @@ namespace Tarea
             Data.Columns.Add("Producto", "Producto");
             Data.Columns.Add("Precio", "Precio");
             Data.Columns.Add("Cantidad", "Cantidad");
-            Data.Columns.Add("Total", "Total");            
-            foreach (var item in Total)
-            {
-                Data.Rows[0].Cells[0].Value = item.NombrePro;
-                Data.Rows[0].Cells[1].Value = item.PrecioU;
-                Data.Rows[0].Cells[2].Value = item.Cantidad;
-                Data.Rows[0].Cells[3].Value = item.PrecioV;
-                //Data.Rows.Add(item.NombrePro);
-                //Data.Rows.Add(item.PrecioU);
-                //Data.Rows.Add(item.Cantidad);
-                //Data.Rows.Add(item.PrecioV);
-            }
+            Data.Columns.Add("Total", "Total"); 
+            
+                foreach (var item in Total)
+                {
+                Data.Rows.Add(item.NombrePro, item.PrecioU, item.Cantidad, item.PrecioV);
+                }
+            
+            
 
             
                 
