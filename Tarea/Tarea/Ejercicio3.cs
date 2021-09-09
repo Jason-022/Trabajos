@@ -24,21 +24,6 @@ namespace Tarea
             Form1 form = new Form1();
             form.Show();
         }
-        //private void llenarmatriz(int[] vector)
-        //{
-        //    int z = 1;
-        //    for (int i = 0; i < nombre; i++)
-        //    {
-
-        //            vector[i] = z;
-        //            z += 2;
-
-        //    }
-
-
-        //}
-
-
         
         private void button1_Click(object sender, EventArgs e)
         {
