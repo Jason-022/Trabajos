@@ -34,22 +34,27 @@ namespace Tarea
             }
 
         }
+        
 
         private void button2_Click(object sender, EventArgs e)
         {
             double notaN = Convert.ToDouble(TxtNotaNew.Text);
             double notaO = Convert.ToDouble(TxtNotaOld.Text);
-
-            
-            notas.RemoveAt(Convert.ToInt32(indice(notaO)));
-            notas.Insert(Convert.ToInt32(indice(notaO)), notaN);
+            Console.WriteLine(notaN);
+            Console.WriteLine(notaO);
+            indice(notaO);
+            double ind = notas.IndexOf(Convert.ToDouble(notaO));
+            notas.RemoveAt(Convert.ToInt32(ind));
+            notas.Insert(Convert.ToInt32(ind), notaN);
+            Console.WriteLine(indice(notaO));
             
         }
-        public double indice( double y)
+        public double indice(double y)
         {
             double ind = notas.IndexOf(y);
             return ind;
         }
+
 
         private void Ejercicio4_Load(object sender, EventArgs e)
         {
@@ -77,5 +82,15 @@ namespace Tarea
             Prom.Text = Convert.ToString(prom);
 
                 }
+
+        private void BtnShow_Click(object sender, EventArgs e)
+        {
+            
+            foreach (var item in notas)
+            {
+                List.Items.Add(item);
+            }
+            
+        }
     }
 }

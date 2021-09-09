@@ -33,7 +33,6 @@
             this.BtnIngresarN = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.button2 = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
             this.TxtNotaNew = new System.Windows.Forms.TextBox();
             this.TxtElimar = new System.Windows.Forms.TextBox();
             this.TxtNotaOld = new System.Windows.Forms.TextBox();
@@ -41,6 +40,9 @@
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.BtnProm = new System.Windows.Forms.Button();
+            this.List = new System.Windows.Forms.ListBox();
+            this.button3 = new System.Windows.Forms.Button();
+            this.BtnShow = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // button1
@@ -88,16 +90,6 @@
             this.button2.Text = "Modificar";
             this.button2.UseVisualStyleBackColor = true;
             this.button2.Click += new System.EventHandler(this.button2_Click);
-            // 
-            // button3
-            // 
-            this.button3.Location = new System.Drawing.Point(607, 157);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(119, 32);
-            this.button3.TabIndex = 5;
-            this.button3.Text = "Eliminar";
-            this.button3.UseVisualStyleBackColor = true;
-            this.button3.Click += new System.EventHandler(this.button3_Click);
             // 
             // TxtNotaNew
             // 
@@ -157,11 +149,42 @@
             this.BtnProm.UseVisualStyleBackColor = true;
             this.BtnProm.Click += new System.EventHandler(this.BtnProm_Click);
             // 
+            // List
+            // 
+            this.List.FormattingEnabled = true;
+            this.List.ItemHeight = 16;
+            this.List.Location = new System.Drawing.Point(465, 275);
+            this.List.Name = "List";
+            this.List.Size = new System.Drawing.Size(120, 180);
+            this.List.TabIndex = 13;
+            // 
+            // button3
+            // 
+            this.button3.Location = new System.Drawing.Point(607, 157);
+            this.button3.Name = "button3";
+            this.button3.Size = new System.Drawing.Size(119, 32);
+            this.button3.TabIndex = 5;
+            this.button3.Text = "Eliminar";
+            this.button3.UseVisualStyleBackColor = true;
+            this.button3.Click += new System.EventHandler(this.button3_Click);
+            // 
+            // BtnShow
+            // 
+            this.BtnShow.Location = new System.Drawing.Point(626, 275);
+            this.BtnShow.Name = "BtnShow";
+            this.BtnShow.Size = new System.Drawing.Size(119, 32);
+            this.BtnShow.TabIndex = 14;
+            this.BtnShow.Text = "Show";
+            this.BtnShow.UseVisualStyleBackColor = true;
+            this.BtnShow.Click += new System.EventHandler(this.BtnShow_Click);
+            // 
             // Ejercicio4
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.BtnShow);
+            this.Controls.Add(this.List);
             this.Controls.Add(this.BtnProm);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label3);
@@ -190,7 +213,6 @@
         private System.Windows.Forms.Button BtnIngresarN;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Button button3;
         private System.Windows.Forms.TextBox TxtNotaNew;
         private System.Windows.Forms.TextBox TxtElimar;
         private System.Windows.Forms.TextBox TxtNotaOld;
@@ -198,5 +220,8 @@
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Button BtnProm;
+        private System.Windows.Forms.ListBox List;
+        private System.Windows.Forms.Button button3;
+        private System.Windows.Forms.Button BtnShow;
     }
 }
