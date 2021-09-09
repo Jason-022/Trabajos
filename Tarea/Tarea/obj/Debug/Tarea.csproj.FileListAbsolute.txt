@@ -1,0 +1,13 @@
+C:\Users\herna\Desktop\Git\Trabajos\Tarea\Tarea\bin\Debug\Tarea.exe.config
+C:\Users\herna\Desktop\Git\Trabajos\Tarea\Tarea\bin\Debug\Tarea.exe
+C:\Users\herna\Desktop\Git\Trabajos\Tarea\Tarea\bin\Debug\Tarea.pdb
+C:\Users\herna\Desktop\Git\Trabajos\Tarea\Tarea\obj\Debug\Tarea.csprojAssemblyReference.cache
+C:\Users\herna\Desktop\Git\Trabajos\Tarea\Tarea\obj\Debug\Tarea.Form1.resources
+C:\Users\herna\Desktop\Git\Trabajos\Tarea\Tarea\obj\Debug\Tarea.Properties.Resources.resources
+C:\Users\herna\Desktop\Git\Trabajos\Tarea\Tarea\obj\Debug\Tarea.csproj.GenerateResource.cache
+C:\Users\herna\Desktop\Git\Trabajos\Tarea\Tarea\obj\Debug\Tarea.csproj.CoreCompileInputs.cache
+C:\Users\herna\Desktop\Git\Trabajos\Tarea\Tarea\obj\Debug\Tarea.exe
+C:\Users\herna\Desktop\Git\Trabajos\Tarea\Tarea\obj\Debug\Tarea.pdb
+C:\Users\herna\Desktop\Git\Trabajos\Tarea\Tarea\obj\Debug\Tarea.Ejercicio2.resources
+C:\Users\herna\Desktop\Git\Trabajos\Tarea\Tarea\obj\Debug\Tarea.Ejercicio3.resources
+C:\Users\herna\Desktop\Git\Trabajos\Tarea\Tarea\obj\Debug\Tarea.Ejercicio4.resources
