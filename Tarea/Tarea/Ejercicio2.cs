@@ -25,6 +25,7 @@ namespace Tarea
         }
         struct Ventas
         {
+            public double ID_Pro;
             public string NombrePro;
             public double PrecioU;
             public double Cantidad;
@@ -37,7 +38,7 @@ namespace Tarea
         private void BtnIngresar_Click(object sender, EventArgs e)
         {
              Ventas VAll = new Ventas();
-
+            VAll.ID_Pro = Convert.ToDouble(TxtID.Text);
             VAll.NombrePro = TxtNombreP.Text;
             VAll.PrecioU = Convert.ToDouble(TxtPrecioU.Text);
             VAll.Cantidad = Convert.ToDouble(TxtCantidad.Text);
@@ -45,15 +46,15 @@ namespace Tarea
 
             Total.Add(VAll);
 
-            string pro = "";
-            double total = 0;
+            
             
 
-            pro = TxtNombreP.Text;
-            total = Convert.ToDouble(TxtPrecioV.Text);
-
-            lb1.Text = pro;
-            lb2.Text = Convert.ToString(total);
+            
+            TxtCantidad.Clear();
+            TxtID.Clear();
+            TxtNombreP.Clear();
+            TxtPrecioU.Clear();
+            TxtPrecioV.Clear();
 
            
 
@@ -65,6 +66,7 @@ namespace Tarea
             Data.Columns.Clear();
             Data.Rows.Clear();
             
+            Data.Columns.Add("ID", "ID");
             Data.Columns.Add("Producto", "Producto");
             Data.Columns.Add("Precio", "Precio");
             Data.Columns.Add("Cantidad", "Cantidad");
@@ -72,7 +74,7 @@ namespace Tarea
             
                 foreach (var item in Total)
                 {
-                Data.Rows.Add(item.NombrePro, item.PrecioU, item.Cantidad, item.PrecioV);
+                Data.Rows.Add(item.ID_Pro, item.NombrePro,"$" + item.PrecioU,item.Cantidad,"$"+ item.PrecioV);
                 }
             
             
@@ -80,5 +82,33 @@ namespace Tarea
             
                 
                 }
+        public static string id;
+        public static string nombreP;
+        public static string Cantidad;
+        public static string preciU;
+        public static string preciV;
+
+        private void Data_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+            
+           
+        }
+
+        private void BtnShowPRo_Click(object sender, EventArgs e)
+        {
+            TxtPro.Text = nombreP;
+            TxtP.Text = preciV;
+            
+        }
+
+        private void Data_CellClick(object sender, DataGridViewCellEventArgs e)
+        {
+            id = Data.Rows[e.RowIndex].Cells["ID"].Value.ToString();
+            nombreP = Data.Rows[e.RowIndex].Cells["Producto"].Value.ToString();
+            preciU = Data.Rows[e.RowIndex].Cells["Precio"].Value.ToString();
+            Cantidad = Data.Rows[e.RowIndex].Cells["Cantidad"].Value.ToString();
+            preciV = Data.Rows[e.RowIndex].Cells["Total"].Value.ToString();
+
+        }
     }
 }
