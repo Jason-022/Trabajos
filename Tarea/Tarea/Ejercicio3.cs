@@ -94,5 +94,10 @@ namespace Tarea
             
 
         }
+
+        private void Ejercicio3_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

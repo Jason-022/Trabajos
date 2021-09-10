@@ -25,11 +25,11 @@ namespace Tarea
         }
         struct Ventas
         {
-            public double ID_Pro;
-            public string NombrePro;
-            public double PrecioU;
-            public double Cantidad;
-            public double PrecioV;
+            public double ID;
+            public string NamePro;
+            public double PU;
+            public double C;
+            public double PV;
 
 
 
@@ -37,19 +37,14 @@ namespace Tarea
         List<Ventas> Total = new List<Ventas>();
         private void BtnIngresar_Click(object sender, EventArgs e)
         {
-             Ventas VAll = new Ventas();
-            VAll.ID_Pro = Convert.ToDouble(TxtID.Text);
-            VAll.NombrePro = TxtNombreP.Text;
-            VAll.PrecioU = Convert.ToDouble(TxtPrecioU.Text);
-            VAll.Cantidad = Convert.ToDouble(TxtCantidad.Text);
-            VAll.PrecioV = Convert.ToDouble(TxtPrecioV.Text);
+             Ventas VentasTotales = new Ventas();
+            VentasTotales.ID = Convert.ToDouble(TxtID.Text);
+            VentasTotales.NamePro = TxtNombreP.Text;
+            VentasTotales.PU = Convert.ToDouble(TxtPrecioU.Text);
+            VentasTotales.C = Convert.ToDouble(TxtCantidad.Text);
+            VentasTotales.PV = Convert.ToDouble(TxtPrecioV.Text);
 
-            Total.Add(VAll);
-
-            
-            
-
-            
+            Total.Add(VentasTotales);        
             TxtCantidad.Clear();
             TxtID.Clear();
             TxtNombreP.Clear();
@@ -74,7 +69,7 @@ namespace Tarea
             
                 foreach (var item in Total)
                 {
-                Data.Rows.Add(item.ID_Pro, item.NombrePro,"$" + item.PrecioU,item.Cantidad,"$"+ item.PrecioV);
+                Data.Rows.Add(item.ID, item.NamePro,"$" + item.PU,item.C,"$"+ item.PV);
                 }
             
             
@@ -108,6 +103,11 @@ namespace Tarea
             preciU = Data.Rows[e.RowIndex].Cells["Precio"].Value.ToString();
             Cantidad = Data.Rows[e.RowIndex].Cells["Cantidad"].Value.ToString();
             preciV = Data.Rows[e.RowIndex].Cells["Total"].Value.ToString();
+
+        }
+
+        private void Ejercicio2_Load(object sender, EventArgs e)
+        {
 
         }
     }

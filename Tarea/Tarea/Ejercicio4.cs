@@ -12,6 +12,7 @@ namespace Tarea
 {
     public partial class Ejercicio4 : Form
     {
+        List<double> Grades = new List<double>();
         public Ejercicio4()
         {
             InitializeComponent();
@@ -23,12 +24,12 @@ namespace Tarea
             Form1 form = new Form1();
             form.Show();
         }
-        List<double> notas = new List<double>();
+        
         private void BtnIngresarN_Click(object sender, EventArgs e)
         {
             for (int i = 0; i < 1; i++)
             {
-                notas.Add( Convert.ToDouble(TxtNota.Text));
+                Grades.Add( Convert.ToDouble(TxtNota.Text));
                 TxtNota.Clear();
 
             }
@@ -38,21 +39,19 @@ namespace Tarea
 
         private void button2_Click(object sender, EventArgs e)
         {
-            double notaN = Convert.ToDouble(TxtNotaNew.Text);
-            double notaO = Convert.ToDouble(TxtNotaOld.Text);
-            Console.WriteLine(notaN);
-            Console.WriteLine(notaO);
-            indice(notaO);
-            double ind = notas.IndexOf(Convert.ToDouble(notaO));
-            notas.RemoveAt(Convert.ToInt32(ind));
-            notas.Insert(Convert.ToInt32(ind), notaN);
-            Console.WriteLine(indice(notaO));
+            double NoN = Convert.ToDouble(TxtNotaNew.Text);
+            double NoO = Convert.ToDouble(TxtNotaOld.Text);
+            indice(NoO);
+            double ind = Grades.IndexOf(Convert.ToDouble(NoO));
+            Grades.RemoveAt(Convert.ToInt32(ind));
+            Grades.Insert(Convert.ToInt32(ind), NoN);
+            
             
         }
         public double indice(double y)
         {
-            double ind = notas.IndexOf(y);
-            return ind;
+            double IndiceNoO = Grades.IndexOf(y);
+            return IndiceNoO;
         }
 
 
@@ -63,32 +62,32 @@ namespace Tarea
 
         private void button3_Click(object sender, EventArgs e)
         {
-            double notaE = Convert.ToDouble(TxtElimar.Text);
+            double NoE = Convert.ToDouble(TxtElimar.Text);
 
-            notas.RemoveAt(Convert.ToInt32(indice(notaE)));
+            Grades.RemoveAt(Convert.ToInt32(indice(NoE)));
         }
 
         private void BtnProm_Click(object sender, EventArgs e)
         {
-            double total = 0;
-            double prom = 0;
+            double Total = 0;
+            double promedio = 0;
 
-            foreach (var item in notas)
+            foreach (int i in Grades)
             {
-                total = total + item;
+                Total = Total + i;
             }
-            prom = total / notas.Count;
+            promedio = Total / Grades.Count;
 
-            Prom.Text = Convert.ToString(prom);
+            Prom.Text = Convert.ToString(promedio);
 
                 }
 
         private void BtnShow_Click(object sender, EventArgs e)
         {
             
-            foreach (var item in notas)
+            foreach (var i in Grades)
             {
-                List.Items.Add(item);
+                List.Items.Add(i);
             }
             
         }
