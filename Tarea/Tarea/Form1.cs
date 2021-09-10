@@ -16,11 +16,14 @@ namespace Tarea
         {
             InitializeComponent();
         }
-
+        public string n;
         private void Form1_Load(object sender, EventArgs e)
         {
-
-        }
+             
+            
+        }       
+        
+        
 
         private void BtnSalir_Click(object sender, EventArgs e)
         {
@@ -46,6 +49,11 @@ namespace Tarea
             this.Hide();
             Ejercicio4 eje4 = new Ejercicio4();
             eje4.Show();
+        }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

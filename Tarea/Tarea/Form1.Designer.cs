@@ -33,6 +33,7 @@
             this.Btn4 = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.BtnSalir = new System.Windows.Forms.Button();
+            this.label2 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // Btn2
@@ -68,11 +69,12 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(163, 27);
+            this.label1.Location = new System.Drawing.Point(283, 15);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(420, 17);
+            this.label1.Size = new System.Drawing.Size(84, 17);
             this.label1.TabIndex = 3;
-            this.label1.Text = "Bienvenido a la interfas para seleccionar que ejercicio desea ver.";
+            this.label1.Text = "¡Bienvenido!";
+            this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
             // BtnSalir
             // 
@@ -84,11 +86,21 @@
             this.BtnSalir.UseVisualStyleBackColor = true;
             this.BtnSalir.Click += new System.EventHandler(this.BtnSalir_Click);
             // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(99, 41);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(514, 17);
+            this.label2.TabIndex = 5;
+            this.label2.Text = "Aquí se mostrara el menu de los botones, para poder desplzarce a los ejercicios";
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.label2);
             this.Controls.Add(this.BtnSalir);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.Btn4);
@@ -109,6 +121,7 @@
         private System.Windows.Forms.Button Btn4;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Button BtnSalir;
+        private System.Windows.Forms.Label label2;
     }
 }
 
