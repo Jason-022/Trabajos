@@ -27,7 +27,7 @@ namespace Tarea
         {
             name = TxtN.Text;
             this.Hide();
-            Form1 form = new Form1(name);
+            Form1 form = new Form1();
             form.Show();
         }
     }
