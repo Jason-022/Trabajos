@@ -41,7 +41,7 @@
             this.label2.AutoSize = true;
             this.label2.Location = new System.Drawing.Point(138, 11);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(154, 13);
+            this.label2.Size = new System.Drawing.Size(205, 17);
             this.label2.TabIndex = 0;
             this.label2.Text = "Ingrese la cantidad de alumnos";
             // 
@@ -49,7 +49,7 @@
             // 
             this.TxtCantA.Location = new System.Drawing.Point(163, 38);
             this.TxtCantA.Name = "TxtCantA";
-            this.TxtCantA.Size = new System.Drawing.Size(100, 20);
+            this.TxtCantA.Size = new System.Drawing.Size(100, 22);
             this.TxtCantA.TabIndex = 1;
             // 
             // button1
@@ -82,6 +82,7 @@
             // 
             // Ejercicio3
             // 
+            this.BackColor = System.Drawing.SystemColors.MenuHighlight;
             this.ClientSize = new System.Drawing.Size(458, 315);
             this.Controls.Add(this.BtnAtras);
             this.Controls.Add(this.registro);

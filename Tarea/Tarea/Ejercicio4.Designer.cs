@@ -51,10 +51,10 @@
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(28, 322);
-            this.button1.Margin = new System.Windows.Forms.Padding(2);
+            this.button1.Location = new System.Drawing.Point(37, 396);
+            this.button1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(79, 34);
+            this.button1.Size = new System.Drawing.Size(105, 42);
             this.button1.TabIndex = 0;
             this.button1.Text = "Volver";
             this.button1.UseVisualStyleBackColor = true;
@@ -62,18 +62,18 @@
             // 
             // TxtNota
             // 
-            this.TxtNota.Location = new System.Drawing.Point(373, 19);
-            this.TxtNota.Margin = new System.Windows.Forms.Padding(2);
+            this.TxtNota.Location = new System.Drawing.Point(497, 23);
+            this.TxtNota.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.TxtNota.Name = "TxtNota";
-            this.TxtNota.Size = new System.Drawing.Size(118, 20);
+            this.TxtNota.Size = new System.Drawing.Size(156, 22);
             this.TxtNota.TabIndex = 1;
             // 
             // BtnIngresarN
             // 
-            this.BtnIngresarN.Location = new System.Drawing.Point(180, 13);
-            this.BtnIngresarN.Margin = new System.Windows.Forms.Padding(2);
+            this.BtnIngresarN.Location = new System.Drawing.Point(240, 16);
+            this.BtnIngresarN.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.BtnIngresarN.Name = "BtnIngresarN";
-            this.BtnIngresarN.Size = new System.Drawing.Size(89, 26);
+            this.BtnIngresarN.Size = new System.Drawing.Size(119, 32);
             this.BtnIngresarN.TabIndex = 2;
             this.BtnIngresarN.Text = "Ingresar nota";
             this.BtnIngresarN.UseVisualStyleBackColor = true;
@@ -82,19 +82,18 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(11, 169);
-            this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label1.Location = new System.Drawing.Point(15, 208);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(101, 13);
+            this.label1.Size = new System.Drawing.Size(135, 17);
             this.label1.TabIndex = 3;
             this.label1.Text = "Promedio de notas: ";
             // 
             // button2
             // 
-            this.button2.Location = new System.Drawing.Point(10, 55);
-            this.button2.Margin = new System.Windows.Forms.Padding(2);
+            this.button2.Location = new System.Drawing.Point(13, 68);
+            this.button2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(89, 26);
+            this.button2.Size = new System.Drawing.Size(119, 32);
             this.button2.TabIndex = 4;
             this.button2.Text = "Modificar Nota";
             this.button2.UseVisualStyleBackColor = true;
@@ -102,64 +101,61 @@
             // 
             // TxtNotaNew
             // 
-            this.TxtNotaNew.Location = new System.Drawing.Point(180, 61);
-            this.TxtNotaNew.Margin = new System.Windows.Forms.Padding(2);
+            this.TxtNotaNew.Location = new System.Drawing.Point(240, 75);
+            this.TxtNotaNew.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.TxtNotaNew.Name = "TxtNotaNew";
-            this.TxtNotaNew.Size = new System.Drawing.Size(118, 20);
+            this.TxtNotaNew.Size = new System.Drawing.Size(156, 22);
             this.TxtNotaNew.TabIndex = 6;
             // 
             // TxtElimar
             // 
-            this.TxtElimar.Location = new System.Drawing.Point(373, 95);
-            this.TxtElimar.Margin = new System.Windows.Forms.Padding(2);
+            this.TxtElimar.Location = new System.Drawing.Point(497, 117);
+            this.TxtElimar.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.TxtElimar.Name = "TxtElimar";
-            this.TxtElimar.Size = new System.Drawing.Size(118, 20);
+            this.TxtElimar.Size = new System.Drawing.Size(156, 22);
             this.TxtElimar.TabIndex = 7;
             // 
             // TxtNotaOld
             // 
-            this.TxtNotaOld.Location = new System.Drawing.Point(373, 57);
-            this.TxtNotaOld.Margin = new System.Windows.Forms.Padding(2);
+            this.TxtNotaOld.Location = new System.Drawing.Point(497, 70);
+            this.TxtNotaOld.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.TxtNotaOld.Name = "TxtNotaOld";
-            this.TxtNotaOld.Size = new System.Drawing.Size(118, 20);
+            this.TxtNotaOld.Size = new System.Drawing.Size(156, 22);
             this.TxtNotaOld.TabIndex = 8;
             // 
             // Prom
             // 
             this.Prom.AutoSize = true;
-            this.Prom.Location = new System.Drawing.Point(115, 169);
-            this.Prom.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.Prom.Location = new System.Drawing.Point(153, 208);
             this.Prom.Name = "Prom";
-            this.Prom.Size = new System.Drawing.Size(16, 13);
+            this.Prom.Size = new System.Drawing.Size(23, 17);
             this.Prom.TabIndex = 9;
             this.Prom.Text = "---";
             // 
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(103, 64);
-            this.label3.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label3.Location = new System.Drawing.Point(137, 79);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(66, 13);
+            this.label3.Size = new System.Drawing.Size(85, 17);
             this.label3.TabIndex = 10;
             this.label3.Text = "Nueva nota:";
             // 
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(302, 64);
-            this.label4.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label4.Location = new System.Drawing.Point(403, 79);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(71, 13);
+            this.label4.Size = new System.Drawing.Size(93, 17);
             this.label4.TabIndex = 11;
             this.label4.Text = "Nota antigua:";
             // 
             // BtnProm
             // 
-            this.BtnProm.Location = new System.Drawing.Point(15, 245);
-            this.BtnProm.Margin = new System.Windows.Forms.Padding(2);
+            this.BtnProm.Location = new System.Drawing.Point(20, 302);
+            this.BtnProm.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.BtnProm.Name = "BtnProm";
-            this.BtnProm.Size = new System.Drawing.Size(89, 26);
+            this.BtnProm.Size = new System.Drawing.Size(119, 32);
             this.BtnProm.TabIndex = 12;
             this.BtnProm.Text = "Promedio";
             this.BtnProm.UseVisualStyleBackColor = true;
@@ -168,18 +164,19 @@
             // List
             // 
             this.List.FormattingEnabled = true;
-            this.List.Location = new System.Drawing.Point(277, 169);
-            this.List.Margin = new System.Windows.Forms.Padding(2);
+            this.List.ItemHeight = 16;
+            this.List.Location = new System.Drawing.Point(369, 208);
+            this.List.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.List.Name = "List";
-            this.List.Size = new System.Drawing.Size(91, 147);
+            this.List.Size = new System.Drawing.Size(120, 180);
             this.List.TabIndex = 13;
             // 
             // button3
             // 
-            this.button3.Location = new System.Drawing.Point(133, 95);
-            this.button3.Margin = new System.Windows.Forms.Padding(2);
+            this.button3.Location = new System.Drawing.Point(177, 117);
+            this.button3.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(89, 26);
+            this.button3.Size = new System.Drawing.Size(119, 32);
             this.button3.TabIndex = 5;
             this.button3.Text = "Eliminar Nota";
             this.button3.UseVisualStyleBackColor = true;
@@ -187,10 +184,10 @@
             // 
             // BtnShow
             // 
-            this.BtnShow.Location = new System.Drawing.Point(373, 290);
-            this.BtnShow.Margin = new System.Windows.Forms.Padding(2);
+            this.BtnShow.Location = new System.Drawing.Point(497, 357);
+            this.BtnShow.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.BtnShow.Name = "BtnShow";
-            this.BtnShow.Size = new System.Drawing.Size(89, 26);
+            this.BtnShow.Size = new System.Drawing.Size(119, 32);
             this.BtnShow.TabIndex = 14;
             this.BtnShow.Text = "Mostrar Datos";
             this.BtnShow.UseVisualStyleBackColor = true;
@@ -199,44 +196,49 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(301, 22);
+            this.label2.Location = new System.Drawing.Point(401, 27);
+            this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(69, 13);
+            this.label2.Size = new System.Drawing.Size(91, 17);
             this.label2.TabIndex = 15;
             this.label2.Text = "Ingrese nota:";
             // 
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(249, 102);
+            this.label5.Location = new System.Drawing.Point(332, 126);
+            this.label5.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(119, 13);
+            this.label5.Size = new System.Drawing.Size(160, 17);
             this.label5.TabIndex = 16;
             this.label5.Text = "Ingrese nota ha eliminar";
             // 
             // label6
             // 
             this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(12, 199);
+            this.label6.Location = new System.Drawing.Point(16, 245);
+            this.label6.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(98, 13);
+            this.label6.Size = new System.Drawing.Size(128, 17);
             this.label6.TabIndex = 17;
             this.label6.Text = "Estado academico:";
             // 
             // txtEstado
             // 
             this.txtEstado.AutoSize = true;
-            this.txtEstado.Location = new System.Drawing.Point(118, 199);
+            this.txtEstado.Location = new System.Drawing.Point(157, 245);
+            this.txtEstado.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.txtEstado.Name = "txtEstado";
-            this.txtEstado.Size = new System.Drawing.Size(16, 13);
+            this.txtEstado.Size = new System.Drawing.Size(23, 17);
             this.txtEstado.TabIndex = 18;
             this.txtEstado.Text = "---";
             // 
             // Ejercicio4
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(502, 366);
+            this.BackColor = System.Drawing.SystemColors.MenuHighlight;
+            this.ClientSize = new System.Drawing.Size(669, 450);
             this.Controls.Add(this.txtEstado);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.label5);
@@ -256,7 +258,7 @@
             this.Controls.Add(this.BtnIngresarN);
             this.Controls.Add(this.TxtNota);
             this.Controls.Add(this.button1);
-            this.Margin = new System.Windows.Forms.Padding(2);
+            this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "Ejercicio4";
             this.Text = "Ejercicio4";
             this.ResumeLayout(false);
