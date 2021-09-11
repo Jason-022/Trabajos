@@ -99,7 +99,7 @@ namespace Tarea
         
         private void BtnIngresarN_Click(object sender, EventArgs e)
         {
-            double nota = Convert.ToInt32(TxtNota.Text);
+            double nota = Convert.ToDouble(TxtNota.Text);
             agregar(Grades, nota );
             TxtNota.Clear();
 
