@@ -66,10 +66,12 @@ namespace Tarea
             {
                 asignacion(cantidad);
                 TxtCantA.Clear();
+                TxtCantA.Enabled = false;
             }
             else
             {
-                MessageBox.Show("La cantidad maxima es de 10 alumnos por salón, porfavor ingrese numero que este en el rango establecido", "Advertencia", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                TxtCantA.Clear();
+                MessageBox.Show("La cantidad maxima es de 10 alumnos por salón, porfavor ingrese un numero que este en el rango establecido", "Advertencia", MessageBoxButtons.OK, MessageBoxIcon.Warning);
             }
         }
     }

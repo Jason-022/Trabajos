@@ -76,7 +76,7 @@
             this.BtnAtras.Name = "BtnAtras";
             this.BtnAtras.Size = new System.Drawing.Size(75, 23);
             this.BtnAtras.TabIndex = 4;
-            this.BtnAtras.Text = "Regresar";
+            this.BtnAtras.Text = "Volver";
             this.BtnAtras.UseVisualStyleBackColor = true;
             this.BtnAtras.Click += new System.EventHandler(this.BtnAtras_Click_1);
             // 

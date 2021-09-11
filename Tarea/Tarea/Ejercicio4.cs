@@ -17,7 +17,79 @@ namespace Tarea
         {
             InitializeComponent();
         }
+        //Metodos
+        private void agregar(List<double> lista, double nota)
+        {
+            if (lista.Count <= 10)
+            {
+                lista.Add(nota);
+            }
+            else 
+            {
+                MessageBox.Show("Solo puedes ingresar un total de 10 notas", "Advertencia", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+        }
+        private void mostrar(ListBox lista, List<double> nota)
+        {
+            if(lista.Items.Count <= 10)
+            {
+                foreach (var i in nota)
+                {
+                    lista.Items.Add(i);
+                }
+                
+            }
+            else
+            {
+                MessageBox.Show("Solo puedes ingresar un total de 10 notas", "Advertencia", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
 
+        }
+
+        private void estado(List<double> nota)
+        {
+            double Total = 0;
+            double promedio = 0;
+
+            foreach (int i in nota)
+            {
+                Total = Total + i;
+            }
+            promedio = Total / nota.Count;
+
+            Prom.Text = Convert.ToString(promedio);
+
+            if(promedio >= 6)
+            {
+                txtEstado.Text = "Aprobado";
+            }
+            else
+            {
+                txtEstado.Text = "Reprobado";
+            }
+        }
+        private void eliminar(List<double> nota, double delete)
+        {
+            nota.RemoveAt(Convert.ToInt32(indice(delete)));
+            
+            if (nota.Count <= 10)
+            {
+                TxtNota.Enabled = true;
+            }
+        }
+        private void reemplazar(List<double> nota, double old, double NEW)
+        {
+            double ind = Grades.IndexOf(Convert.ToDouble(old));
+            nota.RemoveAt(Convert.ToInt32(ind));
+            nota.Insert(Convert.ToInt32(ind), NEW);
+            List.Items.Clear();
+        }
+        public double indice(double y)
+        {
+            double IndiceNoO = Grades.IndexOf(y);
+            return IndiceNoO;
+        }
+        //Fin de los metodos
         private void button1_Click(object sender, EventArgs e)
         {
             this.Hide();
@@ -27,69 +99,49 @@ namespace Tarea
         
         private void BtnIngresarN_Click(object sender, EventArgs e)
         {
-            for (int i = 0; i < 1; i++)
-            {
-                Grades.Add( Convert.ToDouble(TxtNota.Text));
-                TxtNota.Clear();
+            double nota = Convert.ToInt32(TxtNota.Text);
+            agregar(Grades, nota );
+            TxtNota.Clear();
 
+            if (Grades.Count == 10)
+            {
+                TxtNota.Enabled = false;
             }
+            
 
         }
-        
+
 
         private void button2_Click(object sender, EventArgs e)
         {
             double NoN = Convert.ToDouble(TxtNotaNew.Text);
             double NoO = Convert.ToDouble(TxtNotaOld.Text);
             indice(NoO);
-            double ind = Grades.IndexOf(Convert.ToDouble(NoO));
-            Grades.RemoveAt(Convert.ToInt32(ind));
-            Grades.Insert(Convert.ToInt32(ind), NoN);
+            TxtNotaNew.Clear();
+            TxtNotaOld.Clear();
+            reemplazar(Grades, NoO, NoN);
             
             
         }
-        public double indice(double y)
-        {
-            double IndiceNoO = Grades.IndexOf(y);
-            return IndiceNoO;
-        }
-
-
-        private void Ejercicio4_Load(object sender, EventArgs e)
-        {
-
-        }
+        
 
         private void button3_Click(object sender, EventArgs e)
         {
             double NoE = Convert.ToDouble(TxtElimar.Text);
+            eliminar(Grades, NoE);
+            TxtElimar.Clear();
 
-            Grades.RemoveAt(Convert.ToInt32(indice(NoE)));
+
         }
 
         private void BtnProm_Click(object sender, EventArgs e)
         {
-            double Total = 0;
-            double promedio = 0;
-
-            foreach (int i in Grades)
-            {
-                Total = Total + i;
-            }
-            promedio = Total / Grades.Count;
-
-            Prom.Text = Convert.ToString(promedio);
-
-                }
+            estado(Grades);
+        }
 
         private void BtnShow_Click(object sender, EventArgs e)
         {
-            
-            foreach (var i in Grades)
-            {
-                List.Items.Add(i);
-            }
-            
+            mostrar(List, Grades);
         }
     }
 }
