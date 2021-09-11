@@ -16,19 +16,21 @@ namespace Tarea
         {
             InitializeComponent();
         }
-        String name;
+        
         private void Mensaje_Load(object sender, EventArgs e)
         {
+            Form1 form = new Form1();
+            form.Hide();
             
 
         }
 
         private void BtnIn_Click(object sender, EventArgs e)
         {
-            name = TxtN.Text;
             this.Hide();
-            Form1 form = new Form1();
-            form.Show();
+            MensajeNombre.Name = TxtN.Text;            
+            //Form1 form = new Form1();
+            //form.Show();
         }
     }
 }

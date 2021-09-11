@@ -16,11 +16,32 @@ namespace Tarea
         {
             InitializeComponent();
         }
+        
         public string n;
         private void Form1_Load(object sender, EventArgs e)
         {
-             
             
+            this.Hide();
+            if (MensajeNombre.Name == " " )
+            {
+                
+                
+                Mensaje men = new Mensaje();
+                men.Show();
+                
+            }
+            else if(MensajeNombre.Name != "" )
+            {
+                
+                Mensaje men = new Mensaje();
+                men.Hide();
+                Form1 form = new Form1();
+                
+
+            }
+            
+
+
         }       
         
         
@@ -52,6 +73,21 @@ namespace Tarea
         }
 
         private void label1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Form1_Click(object sender, EventArgs e)
+        {
+            lbName.Text =  MensajeNombre.Name;
+        }
+
+        private void label2_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void lbName_Click(object sender, EventArgs e)
         {
 
         }
