@@ -71,7 +71,7 @@ namespace Tarea
         private void eliminar(List<double> nota, double delete)
         {
             nota.RemoveAt(Convert.ToInt32(indice(delete)));
-            
+            List.Items.Clear();
             if (nota.Count <= 10)
             {
                 TxtNota.Enabled = true;
@@ -142,6 +142,11 @@ namespace Tarea
         private void BtnShow_Click(object sender, EventArgs e)
         {
             mostrar(List, Grades);
+        }
+
+        private void Ejercicio4_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }
